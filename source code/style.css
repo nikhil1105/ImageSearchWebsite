@@ -118,7 +118,7 @@ form{
         font-size: 30px;
     }
 }
-/*#search-results{
+#search-results{
     width: 80%;
     margin: 100px auto 50px;
     display: grid;
@@ -131,4 +131,4 @@ form{
     height: 230px;
     object-fit: cover;
     border-radius: 5px;
-}*/
+}
