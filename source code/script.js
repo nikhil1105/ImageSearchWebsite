@@ -24,6 +24,9 @@ async function searchimg() {
     results.map((result)=>
     {
         const imgwrap = document.createElement('div');
+        const imgl = document.createElement('a');
+        imgl.href=result.links.html;
+        imgl.target = "_blank";
         imgwrap.classList.add("search-result");
         const img = document.createElement('img');
         img.src = result.urls.small;
@@ -32,8 +35,8 @@ async function searchimg() {
         imglink.href=result.links.html;
         imglink.target = "_blank";
         imglink.textContent=result.alt_description;
-
-        imgwrap.appendChild(img);
+        imgl.appendChild(img);
+        imgwrap.appendChild(imgl);
         imgwrap.appendChild(imglink);
         searchresult.appendChild(imgwrap);
 
